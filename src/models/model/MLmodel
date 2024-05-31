@@ -4,7 +4,7 @@ flavors:
     pickled_model: model.pkl
     serialization_format: cloudpickle
     sklearn_version: 1.5.0
-mlflow_version: 2.13.0
+mlflow_version: 2.13.1
 model_size_bytes: 73
-model_uuid: e7d8b6d594ed494a9bf701f9082a33f4
-utc_time_created: '2024-05-31 20:40:28.044435'
+model_uuid: edee932ae1f84c69b6ce11de6f973cee
+utc_time_created: '2024-05-31 21:08:27.739047'

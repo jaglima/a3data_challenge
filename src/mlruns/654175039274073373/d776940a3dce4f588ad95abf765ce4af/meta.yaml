@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jesselima/a3data/Iris%20Dataset%20Classifier/src/mlruns/654175039274073373/d776940a3dce4f588ad95abf765ce4af/artifacts
+end_time: 1717189707710
+entry_point_name: ''
+experiment_id: '654175039274073373'
+lifecycle_stage: active
+run_id: d776940a3dce4f588ad95abf765ce4af
+run_name: able-vole-983
+run_uuid: d776940a3dce4f588ad95abf765ce4af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717189704892
+status: 3
+tags: []
+user_id: jesselima
