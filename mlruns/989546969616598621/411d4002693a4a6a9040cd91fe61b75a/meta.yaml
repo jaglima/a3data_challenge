@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jesselima/a3data_challenge/mlruns/989546969616598621/411d4002693a4a6a9040cd91fe61b75a/artifacts
+end_time: 1717192688885
+entry_point_name: ''
+experiment_id: '989546969616598621'
+lifecycle_stage: active
+run_id: 411d4002693a4a6a9040cd91fe61b75a
+run_name: brawny-hare-114
+run_uuid: 411d4002693a4a6a9040cd91fe61b75a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717192686419
+status: 3
+tags: []
+user_id: jesselima

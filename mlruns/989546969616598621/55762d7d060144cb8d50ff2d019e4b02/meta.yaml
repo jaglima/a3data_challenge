@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jesselima/a3data_challenge/mlruns/989546969616598621/55762d7d060144cb8d50ff2d019e4b02/artifacts
+end_time: 1717192647569
+entry_point_name: ''
+experiment_id: '989546969616598621'
+lifecycle_stage: active
+run_id: 55762d7d060144cb8d50ff2d019e4b02
+run_name: debonair-conch-67
+run_uuid: 55762d7d060144cb8d50ff2d019e4b02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717192645072
+status: 3
+tags: []
+user_id: jesselima

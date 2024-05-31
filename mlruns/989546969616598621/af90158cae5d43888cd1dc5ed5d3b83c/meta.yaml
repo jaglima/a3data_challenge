@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jesselima/a3data_challenge/mlruns/989546969616598621/af90158cae5d43888cd1dc5ed5d3b83c/artifacts
+end_time: 1717193090212
+entry_point_name: ''
+experiment_id: '989546969616598621'
+lifecycle_stage: active
+run_id: af90158cae5d43888cd1dc5ed5d3b83c
+run_name: abrasive-moth-704
+run_uuid: af90158cae5d43888cd1dc5ed5d3b83c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717193087291
+status: 3
+tags: []
+user_id: jesselima

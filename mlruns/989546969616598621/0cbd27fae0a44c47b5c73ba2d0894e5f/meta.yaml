@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jesselima/a3data_challenge/mlruns/989546969616598621/0cbd27fae0a44c47b5c73ba2d0894e5f/artifacts
+end_time: 1717193344215
+entry_point_name: ''
+experiment_id: '989546969616598621'
+lifecycle_stage: active
+run_id: 0cbd27fae0a44c47b5c73ba2d0894e5f
+run_name: rebellious-fly-313
+run_uuid: 0cbd27fae0a44c47b5c73ba2d0894e5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717193341820
+status: 3
+tags: []
+user_id: jesselima
