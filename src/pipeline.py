@@ -11,7 +11,7 @@ def run():
     df = load_data()
 
     # Features and target transformations
-    df, le = preprocess_iris_dataframe(df, "target")
+    df = preprocess_iris_dataframe(df, "target")
 
     # Train and test split
     train, test = split_data(df, test_ratio=0.7, random_state=42)
