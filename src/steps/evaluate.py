@@ -13,8 +13,6 @@ def evaluate():
     model_id = exp.iloc[0].run_id
 
     # Save the registered model as a pickle file
-    mlflow.sklearn.save_model(
-        f"runs:/{model_id}/random_forest_model", f"models/{model_id}"
-    )
+    mlflow.sklearn.save_model(f"runs:/{model_id}", f"models/{model_id}")
 
     return model_id

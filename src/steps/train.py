@@ -10,6 +10,10 @@ from sklearn.metrics import (
 
 
 def train_and_evaluate(train_x, train_y, test_x, test_y):
+    # Get the current tracking uri
+    # mlflow.set_tracking_uri("http://localhost:5000")
+    tracking_uri = mlflow.get_tracking_uri()
+    print(f"Current tracking uri: {tracking_uri}")
     mlflow.set_experiment("Iris RandomForest Experiment")
 
     # PARAMS
@@ -41,6 +45,10 @@ def train_and_evaluate(train_x, train_y, test_x, test_y):
         # Specify metric conditions
 
         mlflow.sklearn.log_model(rf_classifier, "random_forest_model")
+
+        # Log additional artifact (preprocessing object)
+        mlflow.log_artifact("data/target_encoder.pkl", "random_forest_model")
+        mlflow.log_artifact("data/feat_encoder.pkl", "random_forest_model")
 
         print(
             f"Run with max_depth={MAX_DEPTH},  n_estimators={N_ESTIMATOR} accuracy={accuracy}"
