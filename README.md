@@ -1,6 +1,6 @@
 # Iris Pipeline
 
-This is a prototypical Machine Learning pipeline for the Iris dataset.
+This is a prototypical Machine Learning pipeline for Iris dataset classifier training.
 It uses MLFlow as a model registry to manage and track experiments and models.
 
 ## Table of Contents
@@ -28,14 +28,14 @@ Clone the repository
 ```bash
 git clone https://github.com/your-username/iris_pipeline.git
 cd iris_pipeline
-conda create -n iris-pipeline python=3.9
+conda create -n iris-pipeline python=3.10
 conda activate iris-pipeline
 # install dependencies
 pip install -r requirements.txt
 ```
 
 # Usage
-In order to `simulate` a orchestration, please run pipeline.py. It will execute each step in src/steps
+In order to `simulate` an orchestration, please run pipeline.py. It will execute each step in src/steps
 ```bash
 python src/pipeline.py
 ````
@@ -43,7 +43,7 @@ python src/pipeline.py
 To assess the outputs, run the MLFlow UI
 
 ```bash
-mlflow ui
+mlflow ui -p 5010
 ```
 
-got to 127.0.0.1:8000 and navigate through the experiment.
+got to 127.0.0.1:5010 and navigate through the experiment.
