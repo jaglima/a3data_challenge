@@ -1,45 +1,49 @@
-# Iris Dataset Classifier
+# Iris Pipeline
 
-Project created with MLOps-Template cookiecutter. For more info: https://mlopsstudygroup.github.io/mlops-guide/
+This is a prototypical Machine Learning pipeline for the Iris dataset.
+It uses MLFlow as a model registry to manage and track experiments and models.
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Directory Structure](#directory-structure)
+- [Setup](#setup)
+  - [Clone the Repository](#clone-the-repository)
+  - [Create Conda Environment](#create-conda-environment)
+  - [Install Dependencies](#install-dependencies)
+  - [Run MLFlow](#run-mlflow)
+- [Usage](#usage)
+  - [Running the Pipeline](#running-the-pipeline)
+  - [Tracking Experiments with MLFlow](#tracking-experiments-with-mlflow)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+This project is designed to demonstrate a machine learning pipeline using the Iris dataset. It incorporates MLFlow for tracking experiments, logging model parameters, metrics, and artifacts, and managing model versions.
 
 
-## 📋 Requirements
+# Setup
 
-* DVC
-* Python3 and pip
-* Access to IBM Cloud Object Storage
-
-## 🏃🏻 Running Project
-
-~/.aws/credentials
-
-```credentials
-[default]
-aws_access_key_id = {Key ID}
-aws_secret_access_key = {Access Key}
+Clone the repository
+```bash
+git clone https://github.com/your-username/iris_pipeline.git
+cd iris_pipeline
+conda create -n iris-pipeline python=3.9
+conda activate iris-pipeline
+# install dependencies
+pip install -r requirements.txt
 ```
 
+# Usage
+In order to `simulate` a orchestration, please run pipeline.py. It will execute each step in src/steps
+```bash
+python src/pipeline.py
+````
 
-### ✅ Pre-commit Testings
+To assess the outputs, run the MLFlow UI
 
-In order to activate pre-commit testing you need ```pre-commit```
-
-Installing pre-commit with pip
-```
-pip install pre-commit
-```
-
-Installing pre-commit on your local repository. Keep in mind this creates a Github Hook.
-```
-pre-commit install
+```bash
+mlflow ui
 ```
 
-Now everytime you make a commit, it will run some tests defined on ```.pre-commit-config.yaml``` before allowing your commit.
-
-**Example**
-```
-$ git commit -m "Example commit"
-
-black....................................................................Passed
-pytest-check.............................................................Passed
-```
+got to 127.0.0.1:8000 and navigate through the experiment.
