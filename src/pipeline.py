@@ -1,4 +1,4 @@
-from steps.ingestion import load_data
+from steps.ingestion import download_iris_dataset
 from steps.transformers import preprocess_iris_dataframe
 from steps.train_test_split import split_data, get_feat_and_target
 from steps.train import train_and_evaluate
@@ -8,7 +8,7 @@ from steps.evaluate import evaluate
 def run():
     # It is a imitation of orchestrator
     # Load Data
-    df = load_data()
+    df = download_iris_dataset()
 
     # Features and target transformations
     df = preprocess_iris_dataframe(df, "target")

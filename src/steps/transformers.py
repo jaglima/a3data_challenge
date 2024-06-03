@@ -32,12 +32,7 @@ def preprocess_iris_dataframe(df, target_column):
     df_preprocessed = df.copy()
 
     # Define feature columns, numerical columns, and categorical columns
-    num_cols = [
-        "sepal length (cm)",
-        "sepal width (cm)",
-        "petal length (cm)",
-        "petal width (cm)",
-    ]
+    num_cols = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
     cat_cols = [target_column]
 
     # Apply feature transformation to numerical columns
